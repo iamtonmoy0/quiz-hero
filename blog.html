@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QnA Blog</title>
+</head>
+<body class="m-12">
+  
+    <div class="mt-12 border-neutral-900 border-2 p-2">
+        <h2 class="text-3xl mb-5">What is the difference between Map, forEach, Filter and Find?</h2>
+        <p class="text-2xl">
+            Map - The map method receives a function as a parameter. Then it applies it on each element of the array and returns an entirely new array populated with the results of calling the provided function. In short, The map() method is used to transform the elements of an array. <br>
+            <br>
+            forEach - forEach method receives a function as an argument and executes it once for each array element. It calls a function for each element in an array. Its a powerful method used to modify and interact with data collections. <br>
+            <br>
+            Filter - Filter method check every elements of an array and then return a new array containing all the matching elements that pass the conditions/test. <br>
+            <br>
+            Find - The find() is similar to filter, difference is find method returns only the value of the first element of the array </p>
+    </div>
+      <div class="mt-12 border-neutral-900 border-2 p-2">
+        <h2 class="text-3xl mb-5">What is the difference between cookies, sessionStorage and localStorage?</h2>
+        <p class="text-2xl">
+            Cookies - Cookies let you store data(key/value pairs) in the server sent by browser. Its data are transferred on each HTTP request and data limit is 4kb. <br>
+            <br>
+            Session storage - The sessionStorage let you store data(key/value pairs) in the browser. Data in sessionStorage is cleared when the page session ends or browser window get closed. Data limit 5-10 mb. <br>
+            <br>
+            localStorage - The localStorage same like sessionStorage, allows you to save data(key/value pairs) in the browser. The difference is localStorage stores data has no expiration date. Data is not deleted when the browser is closed, and are available for future sessions.  Data limit 5 mb.
+        </p>
+    </div>
+
+    <div class="mt-12 border-neutral-900 border-2 p-2">
+        <h2 class="text-3xl mb-5">What is JavaScript Event loop and how it works?</h2>
+        <p class="text-2xl">
+            Event loop in JavaScript is a mechanism through which the 'calls waiting for execution' in the callback queue/job queue can be put on the call stack. The event loop is the secret behind JavaScript's asynchronous programming. <br>
+            The event loop is what allows javascript to handle thousands and thousands of requests with just a single thread. Event loop use to executing the code, collecting and processing events, and executing queued sub-tasks.
+        </p>
+    </div>
+
+    <div class="mt-12 border-neutral-900 border-2 p-2">
+        <h2 class="text-3xl mb-5">What is the purpose of quizTimer()</h2>
+        <p class="text-2xl">quizTimer() handle the countdown timing system of the website while giving the answers of the quiz.
+            It starts the countdown when the quiz get started. If giving answer takes more then 60 seconds, this function make the countdown timer color into red</p>
+    </div>
+    <div class="mt-12 border-neutral-900 border-2 p-2">
+        <h2 class="text-3xl mb-5">What is the purpose of chooseQuiz()</h2>
+        <p class="text-2xl">chooseQuiz() purpose is when we select an option of answers in quiz page it target it and show it in result page by displayAnswers() with some description.</p>
+    </div>
+  
+    <button id="home" class="bg-green-600 font-bold text-2xl px-7 py-4 mx-auto block rounded text-white mt-12">Home</button>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // EventListener for Blog button
+        document.getElementById("home").addEventListener("click", function () {
+        // console.log("clicked");
+        window.location.href = "index.html";
+        })
+    </script>
+</body>
+</html>
